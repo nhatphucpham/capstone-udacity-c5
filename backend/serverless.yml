@@ -202,7 +202,7 @@ functions:
       STAGE: ${self:provider.stage}
       API_ID:
         Ref: WebsocketsApi
-    handler: src/lambda/s3/sendNotifications.handler
+    handler: src/lambda/notifications/sendNotifications.handler
     events:
       - sns:
           arn:
